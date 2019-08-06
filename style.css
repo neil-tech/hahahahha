@@ -1,0 +1,110 @@
+/*GENERAL CSS*/
+body{
+	font-size: 16px;
+	margin: 0px;
+
+}
+#nav{
+	background-color: #C86F9E;
+	margin: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+#nav-list{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav-list li{
+	/*float: left;*/
+	display: inline-block;
+	margin-right: 10px;
+	transition: background-color 0.3;
+
+}
+#nav-list li:hover{
+	background-color: #fff;
+}
+li, a{
+	Display: Block;
+}
+a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+#social-links{
+	display: flex;
+}
+#social-links li{
+	margin-right: 10px;
+}
+#image{
+	background-image: url(travel.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+#image h1{
+	color: white;
+}
+#image p{
+	color: white;
+}
+
+#projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 40px 0px 40px;
+}
+
+#title{
+	text-align: center;
+}
+
+.websites{
+	margin-right: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+#testimonials{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 40px 0px 40px;
+}
+
+#title{
+	text-align: center;
+}
+
+.damn{
+	margin-right: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+img{
+	box-shadow: 10px 10px 8px 10px #888888;
+}
+
+@media screen and (max-width: 700px){
+	#nav{
+		flex-direction: column;
+		align-items: center; 
+	}
+
+#nav ul{
+	flex-direction: column; 
+}
+
+#nav #social-links{
+	order: 1;
+}
+}
